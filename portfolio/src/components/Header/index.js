@@ -17,14 +17,14 @@ const Header = () => {
 
   return (
     <header className="flex-row">
-      <a href="/">
-        <h2 >Naferi</h2>
+      <a data-testid="link" href="/">
+        <h2>Naferi</h2>
       </a>
       <nav className="text-center">
         <ul className="flex-row">
           <li className="mx-2">
             {" "}
-            <a href="#about">About</a>
+            <a data-testid="about" href="#about">About</a>
           </li>
           <li to="/contact">
             <span>Contact</span>
