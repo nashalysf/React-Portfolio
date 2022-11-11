@@ -6,10 +6,10 @@ main {
 }
 :root {
   --primary: #c5c5c5;
-  --secondary: #4c5b61;
+  --secondary: #111111;
   --tertiary: #829191;
-  --light: #949b96;
-  --dark: #2c423f;
+  --light: #E0FBFC;
+  --dark: #BD9391;
   --darker: #111111;
   --error: rgb(228, 46, 1);
   --spacing-one: calc(1rem * 0.5);
@@ -25,6 +25,7 @@ main {
 html,
 body {
   min-height: 100%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 body {
@@ -53,7 +54,7 @@ h6 {
 }
 
 h1 {
-  font-size: 2.25rem;
+  font-size: 3rem;
 }
 
 h2 {
@@ -79,6 +80,7 @@ h6 {
 p {
   font-size: 1.1rem;
   margin-top: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 a {
@@ -148,6 +150,7 @@ input:focus {
 
 li {
   list-style: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 nav a:hover {
@@ -208,6 +211,12 @@ textarea {
 .my-5 {
   margin-top: var(--spacing-five);
   margin-bottom: var(--spacing-five);
+  display: flex;
+
+}
+.my-5 p {
+  padding-left: 10%;
+  padding-top: 1%;
 }
 
 .px-1 {

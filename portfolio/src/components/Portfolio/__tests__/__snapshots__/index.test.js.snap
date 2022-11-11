@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Portfolio component matches snapshot 1`] = `
+<DocumentFragment>
+  <section>
+    <h1
+      data-testid="h1tag"
+    >
+      Deepen
+    </h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie
+    </p>
+    <div>
+      <div
+        class="flex-row"
+      />
+    </div>
+  </section>
+</DocumentFragment>
+`;
