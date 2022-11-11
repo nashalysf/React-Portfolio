@@ -6,6 +6,8 @@ const Header = (props) => {
     currentCategory,
     contactSelected,
     setContactSelected,
+    setResumeSelected,
+    resumeSelected
   } = props;
   useEffect(() => {
     document.title = (currentCategory.name);
@@ -19,12 +21,12 @@ const Header = (props) => {
       <nav className="text-center">
         <ul className="flex-row">
           <li className="mx-2">
-            <a data-testid="about" href="#about" onClick={() => setContactSelected(false)}>
+            <a data-testid="about" href="#about" onClick={() => setContactSelected(false) || setResumeSelected(false)}>
               About
             </a>
           </li>
-          <li className="mx-2">
-            <a href="#resume">Resume</a>
+          <li className={`mx-2 ${resumeSelected && 'navActive'}`}>
+            <span onClick={() => setResumeSelected(true)}><a href='#resume'>Resume</a></span>
           </li>
           <li className={`mx-2 ${contactSelected && 'navActive'}`}>
             <span onClick={() => setContactSelected(true)}>Contact</span>
@@ -38,6 +40,7 @@ const Header = (props) => {
                 onClick={() => {
                   setCurrentCategory(category);
                   setContactSelected(false);
+                  setResumeSelected(false);
                 }}
               >
                 {category.name}

@@ -8,6 +8,7 @@ import Resume from "./components/Resume";
 
 function App() {
   const [contactSelected, setContactSelected] = useState(false);
+  const [resumeSelected, setResumeSelected] = useState(false);
   const [categories] = useState([
     {
       name: "Front",
@@ -28,6 +29,8 @@ function App() {
         currentCategory={currentCategory}
         contactSelected={contactSelected}
         setContactSelected={setContactSelected}
+        resumeSelected = {resumeSelected}
+        setResumeSelected = {setResumeSelected}
       ></Header>
       <main>
         {!contactSelected ? (
@@ -39,6 +42,7 @@ function App() {
         ) : (
           <ContactForm></ContactForm>
         )}
+       
       </main>
     </div>
   );
