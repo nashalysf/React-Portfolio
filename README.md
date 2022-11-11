@@ -13,7 +13,7 @@ The purpose of this project was to execute and controll a React and its componen
 ```
 `npm start`
 ```
-
+4. Or visit the deployed [GitHub URL](https://nashalysf.github.io/React-Portfolio/)
 ## Learning Curve
 * While creating this app I learned and practice:
 1. Conditionally render a component.
